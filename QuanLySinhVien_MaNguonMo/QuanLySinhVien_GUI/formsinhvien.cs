@@ -21,7 +21,7 @@ namespace QuanLySinhVien_GUI
         {
             try
             {
-                QuanLySinhVien_BLL.sinhvien.Nhap_SV(txtMaSV.Text,txtTenSV.Text,dtpNgaySinh.Text,cmbMaLop.SelectedValue.ToString());
+                QuanLySinhVien_BLL.sinhvien.Nhap_SV(txtMaSV.Text,txtTenSV.Text,dtpNgaySinh.Text,cmbMaLop.SelectedValue.ToString(),cbbKhoa.SelectedValue.ToString();
                 dgvSinhVien.DataSource = QuanLySinhVien_DAL.Data.DS_SINHVIEN();
                 MessageBox.Show("Thêm thành công","Quản lý sinh viên",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
@@ -36,6 +36,10 @@ namespace QuanLySinhVien_GUI
             cmbMaLop.DataSource = QuanLySinhVien_DAL.Data.DS_LOP();
             cmbMaLop.DisplayMember = "TenLop";
             cmbMaLop.ValueMember = "MaLop";
+
+            cbbKhoa.DataSource = QuanLySinhVien_DAL.Data.DS_KHOA();
+            cbbKhoa.DisplayMember = "TenKhoa";
+            cbbKhoa.ValueMember = "MaKhoa";
         }
 
         private void btnSua_Click(object sender, EventArgs e)

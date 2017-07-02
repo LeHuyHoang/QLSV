@@ -27,5 +27,15 @@ namespace QuanLySinhVien_GUI
             formsinhvien f = new formsinhvien();
             f.Show();
         }
+
+        private void điểmSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            quanlydiem f = new quanlydiem();
+        }
+
+        private void thoátToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -43,6 +43,8 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
+            this.cbbKhoa = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,9 +53,9 @@
             this.lblMaLop.AutoSize = true;
             this.lblMaLop.Location = new System.Drawing.Point(464, 207);
             this.lblMaLop.Name = "lblMaLop";
-            this.lblMaLop.Size = new System.Drawing.Size(43, 13);
+            this.lblMaLop.Size = new System.Drawing.Size(25, 13);
             this.lblMaLop.TabIndex = 59;
-            this.lblMaLop.Text = "Mã Lớp";
+            this.lblMaLop.Text = "Lớp";
             // 
             // blNgaySinh
             // 
@@ -151,7 +153,7 @@
             // 
             this.btnThem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThem.BackgroundImage")));
             this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnThem.Location = new System.Drawing.Point(467, 280);
+            this.btnThem.Location = new System.Drawing.Point(467, 297);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(72, 30);
             this.btnThem.TabIndex = 50;
@@ -163,7 +165,7 @@
             // 
             this.btnXoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoa.BackgroundImage")));
             this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnXoa.Location = new System.Drawing.Point(565, 280);
+            this.btnXoa.Location = new System.Drawing.Point(565, 297);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(72, 30);
             this.btnXoa.TabIndex = 53;
@@ -176,7 +178,7 @@
             this.btnSua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSua.BackgroundImage")));
             this.btnSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSua.ForeColor = System.Drawing.Color.Black;
-            this.btnSua.Location = new System.Drawing.Point(660, 280);
+            this.btnSua.Location = new System.Drawing.Point(660, 297);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(72, 30);
             this.btnSua.TabIndex = 52;
@@ -184,11 +186,31 @@
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
+            // cbbKhoa
+            // 
+            this.cbbKhoa.DisplayMember = "MaLop";
+            this.cbbKhoa.FormattingEnabled = true;
+            this.cbbKhoa.Location = new System.Drawing.Point(561, 253);
+            this.cbbKhoa.Name = "cbbKhoa";
+            this.cbbKhoa.Size = new System.Drawing.Size(171, 21);
+            this.cbbKhoa.TabIndex = 56;
+            this.cbbKhoa.ValueMember = "MaLop";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(464, 253);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 59;
+            this.label1.Text = "Khoa";
+            // 
             // formsinhvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(768, 416);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMaLop);
             this.Controls.Add(this.blNgaySinh);
             this.Controls.Add(this.lblTenSV);
@@ -196,6 +218,7 @@
             this.Controls.Add(this.lblTittle);
             this.Controls.Add(this.dgvSinhVien);
             this.Controls.Add(this.dtpNgaySinh);
+            this.Controls.Add(this.cbbKhoa);
             this.Controls.Add(this.cmbMaLop);
             this.Controls.Add(this.txtTenSV);
             this.Controls.Add(this.txtMaSV);
@@ -228,5 +251,7 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.ComboBox cbbKhoa;
+        private System.Windows.Forms.Label label1;
     }
 }

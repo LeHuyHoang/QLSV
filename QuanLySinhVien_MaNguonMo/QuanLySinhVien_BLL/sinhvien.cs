@@ -15,11 +15,11 @@ namespace QuanLySinhVien_BLL
         {
             return true;
         }*/
-        public static void Nhap_SV(string masv, string tensv, string ngaysinh, string malop)
+        public static void Nhap_SV(string masv, string tensv, string ngaysinh, string malop, string makhoa)
         {
                 SqlConnection con = new SqlConnection(QuanLySinhVien_DAL.DB_connect.strcon);
                 con.Open();
-                SqlCommand cmd = new SqlCommand("insert into SINHVIEN values('" + masv + "','" + tensv + "','" + ngaysinh + "','" + malop + "')", con);
+                SqlCommand cmd = new SqlCommand("insert into SINHVIEN values('" + masv + "','" + tensv + "','" + ngaysinh + "','" + malop + "','"+makhoa+"')", con);
                 cmd.ExecuteNonQuery();
                 con.Close();
             

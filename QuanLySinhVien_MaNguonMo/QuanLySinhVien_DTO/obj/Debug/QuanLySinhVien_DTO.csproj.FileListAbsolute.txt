@@ -1,0 +1,5 @@
+E:\Git\QLSV\QuanLySinhVien_MaNguonMo\QuanLySinhVien_DTO\bin\Debug\QuanLySinhVien_DTO.dll
+E:\Git\QLSV\QuanLySinhVien_MaNguonMo\QuanLySinhVien_DTO\bin\Debug\QuanLySinhVien_DTO.pdb
+E:\Git\QLSV\QuanLySinhVien_MaNguonMo\QuanLySinhVien_DTO\obj\Debug\QuanLySinhVien_DTO.csprojResolveAssemblyReference.cache
+E:\Git\QLSV\QuanLySinhVien_MaNguonMo\QuanLySinhVien_DTO\obj\Debug\QuanLySinhVien_DTO.dll
+E:\Git\QLSV\QuanLySinhVien_MaNguonMo\QuanLySinhVien_DTO\obj\Debug\QuanLySinhVien_DTO.pdb
